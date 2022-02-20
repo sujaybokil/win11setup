@@ -4,11 +4,7 @@
     "actions": 
     [
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            }
+            "command": "paste"
         },
         {
             "command": 
@@ -18,7 +14,23 @@
             "keys": "alt+j"
         },
         {
-            "command": "paste"
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
+        },
+        {
+            "command": "closePane",
+            "keys": "alt+w"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 2
+            },
+            "keys": "alt+3"
         },
         {
             "command": "unbound",
@@ -229,20 +241,8 @@
             "keys": "win+sc(41)"
         },
         {
-            "command": 
-            {
-                "action": "switchToTab",
-                "index": 2
-            },
-            "keys": "alt+3"
-        },
-        {
             "command": "find",
             "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "closePane",
-            "keys": "alt+w"
         },
         {
             "command": 
@@ -278,13 +278,6 @@
         {
             "command": 
             {
-                "action": "quakeMode"
-            },
-            "keys": "alt+q"
-        },
-        {
-            "command": 
-            {
                 "action": "switchToTab",
                 "index": 5
             },
@@ -297,6 +290,13 @@
                 "index": 1
             },
             "keys": "alt+shift+2"
+        },
+        {
+            "command": 
+            {
+                "action": "quakeMode"
+            },
+            "keys": "alt+q"
         },
         {
             "command": 
@@ -317,6 +317,14 @@
         {
             "command": 
             {
+                "action": "newTab",
+                "index": 3
+            },
+            "keys": "alt+shift+4"
+        },
+        {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 1
             },
@@ -326,9 +334,9 @@
             "command": 
             {
                 "action": "newTab",
-                "index": 3
+                "index": 4
             },
-            "keys": "alt+shift+4"
+            "keys": "alt+shift+5"
         },
         {
             "command": 
@@ -336,14 +344,6 @@
                 "action": "openSettings",
                 "target": "defaultsFile"
             }
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 4
-            },
-            "keys": "alt+shift+5"
         },
         {
             "command": 
@@ -379,13 +379,6 @@
         {
             "command": 
             {
-                "action": "commandPalette"
-            },
-            "keys": "alt+p"
-        },
-        {
-            "command": 
-            {
                 "action": "switchToTab",
                 "index": 3
             },
@@ -401,13 +394,16 @@
         {
             "command": 
             {
+                "action": "commandPalette"
+            },
+            "keys": "alt+p"
+        },
+        {
+            "command": 
+            {
                 "action": "scrollUp"
             },
             "keys": "alt+u"
-        },
-        {
-            "command": "openTabRenamer",
-            "keys": "alt+r"
         },
         {
             "command": 
@@ -416,6 +412,10 @@
                 "index": 0
             },
             "keys": "alt+1"
+        },
+        {
+            "command": "openTabRenamer",
+            "keys": "alt+r"
         },
         {
             "command": 
@@ -465,7 +465,8 @@
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt"
+                "name": "Command Prompt",
+                "opacity": 75
             },
             {
                 "commandline": "\"C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe\" -nologo",
