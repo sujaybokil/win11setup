@@ -10,10 +10,10 @@ The setup contains the following components
 
 Lo and behold, a minimal and blazing fast workflow
 
-![Screenshot1](Pictures/desktop-screenshots/1.PNG)
-![Screenshot2](Pictures/desktop-screenshots/2.PNG)
-![Screenshot3](Pictures/desktop-screenshots/3.PNG)
-![Screenshot4](Pictures/desktop-screenshots/4.PNG)
+![Screenshot1](Pictures/desktop-screenshots/1.png)
+![Screenshot2](Pictures/desktop-screenshots/2.png)
+![Screenshot3](Pictures/desktop-screenshots/3.png)
+![Screenshot4](Pictures/desktop-screenshots/4.png)
 
 <h4>Some extra stuff</h4>
 
