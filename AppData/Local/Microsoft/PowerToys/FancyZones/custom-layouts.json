@@ -1,0 +1,63 @@
+{
+  "custom-layouts": [
+    {
+      "uuid": "{3CCE464A-F91C-4230-8A2B-438A486D87D8}",
+      "name": "No layout",
+      "type": "canvas",
+      "info": {
+        "ref-width": 1536,
+        "ref-height": 816,
+        "zones": [],
+        "sensitivity-radius": 20
+      }
+    },
+    {
+      "uuid": "{33476864-7EBF-4FE5-B325-AFB2FE592586}",
+      "name": "Swagger",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 1,
+        "rows-percentage": [
+          10000
+        ],
+        "columns-percentage": [
+          10000
+        ],
+        "cell-child-map": [
+          [
+            0
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 18,
+        "sensitivity-radius": 20
+      }
+    },
+    {
+      "uuid": "{9A0E1F85-1F16-4CEB-9CA9-3C358E4D8CF6}",
+      "name": "Coding",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 2,
+        "rows-percentage": [
+          10000
+        ],
+        "columns-percentage": [
+          4647,
+          5353
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}
