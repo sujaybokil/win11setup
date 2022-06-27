@@ -149,7 +149,7 @@ SwitchLayout() {
 
 }
 
-#Space::{
+!Space::{
     SwitchLayout()
 }
 
