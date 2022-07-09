@@ -1,0 +1,118 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "version": 2,
+    "final_space": false,
+
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "shell",
+                    "style": "diamond",
+                    "leading_diamond": "╭─",
+                    "trailing_diamond": "",
+                    "foreground": "black",
+                    "background": "white",
+                    "template": " {{ .Name }}",
+                    "properties": {
+                        "mapped_shell_names": {
+                            "pwsh": "pwsh"
+                        }
+                    }
+                },
+                {
+                    "type": "path",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B4",
+                    "foreground": "#dddddd",
+                    "background": "blue",
+                    "properties": {
+                        "style": "agnoster_full",
+                        "mapped_locations": {
+                            "~": ""
+                        }
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B4",
+                    "foreground": "black",
+                    "background": "lightYellow",
+                    "background_templates": [
+                        "{{ if or (.Working.Changed) (.Staging.Changed) }}yellow{{ end }}",
+                        "{{ if and (gt .Ahead 0) (gt .Behind 0) }}lightYellow{{ end }}",
+                        "{{ if gt .Ahead 0 }}magenta{{ end }}",
+                        "{{ if gt .Behind 0 }}lightMagenta{{ end }}"
+                    ],
+                    "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uF044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uF046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uF692 {{ .StashCount }}{{ end }}",
+                    "properties": {
+                        "fetch_status": false,
+                        "fetch_upstream_icon": true,
+                        "untracked_modes": {
+                            "/Users/user/Projects/oh-my-posh/": "no"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "python",
+                    "style": "diamond",
+                    "leading_diamond": "\uE0B6",
+                    "trailing_diamond": "\uE0B4",
+                    "foreground": "black",
+                    "background": "magenta",
+                    "template": "{{ if .Venv }} \uE235 {{ .Venv }} {{ end }}"
+                },
+                {
+                    "type": "exit",
+                    "style": "diamond",
+                    "foreground": "lightGreen",
+                    "background": "black",
+                    "foreground_templates": [
+                        "{{ if gt .Code 0 }}lightRed{{ end }}"
+                    ],
+                    "leading_diamond": "\uE0B6",
+                    "trailing_diamond": "",
+                    "template": "{{ if gt .Code 0 }}\uf00d {{ .Meaning }}{{ else }}\uf42e{{ end }}",
+                    "properties": {
+                        "always_enabled": true
+                    }
+                },
+                {
+                    "type": "time",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B4",
+                    "foreground": "black",
+                    "background": "lightCyan",
+                    "properties": {
+                        "time_format": "3:04:05 PM"
+                    },
+                    "template": " {{ .CurrentDate | date .Format }} 🕑"
+                }
+
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "white",
+                    "template": "╰─\u276F "
+                }
+            ]
+        }
+    ]
+
+}

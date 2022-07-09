@@ -4,9 +4,9 @@ The setup contains the following components
 
 1. Microsoft PowerToys configs
 2. Windows Terminal settings file
-3. AutoHotKey Scripts
-4. [Icon Pack](https://www.deviantart.com/jepricreations/art/Windows-11-Cursors-Concept-v2-886489356)
-5. ZSH config for WSL
+3. AutoHotKey Script
+4. [Icon Pack](https://www.deviantart.com/jepricreations/art/Windows-11-Cursors-Concept-v2-886489356) and Font
+5. Powershell config
 
 Lo and behold, a minimal and blazing fast workflow
 

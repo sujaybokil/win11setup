@@ -6,7 +6,7 @@
 
 #b::
 {
-    Run "C:\Users\Cursed\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe"
 }
 
 #w::
@@ -149,7 +149,15 @@ SwitchLayout() {
 
 }
 
-!Space::{
+#+Space::{
     SwitchLayout()
 }
 
+; Window snapping
+#+k::{
+    Send "#{Right}"
+}
+
+#+j::{
+    Send "#{Left}"
+}
