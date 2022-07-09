@@ -1,13 +1,17 @@
 oh-my-posh init pwsh --config ~/.config/pwsh/cursed.omp.json | Invoke-Expression
 Import-Module -Name Terminal-Icons
+Import-Module -Name posh-git
 
 # Options
 $PSReadLineOptions = @{
     EditMode = "Emacs"
     PredictionSource = "HistoryAndPlugin"
-    PredictionViewStyle = "ListView"
+    PredictionViewStyle = "InlineView"
     HistoryNoDuplicates = $true
     BellStyle = "None"
+    Colors = @{
+        InlinePrediction   = 'DarkGray'
+    }
 }
 Set-PSReadLineOption @PSReadLineOptions
 Set-PSReadLineKeyHandler -Key "Tab" -Function NextHistory
